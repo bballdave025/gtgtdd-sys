@@ -79,7 +79,7 @@ LN_gtgtdd_2025-05-16_ctx01_-_trajectories_career_resumes_etc.md
 
 (`LN` is for Lab Notebook, my name for these files since undergrad, even when working in industry.)
 
-(`gtgtdf` is for uGTgtdD system.)
+(`gtgtdd` is for uGTgtdD system.)
 
 Something like `ctx01` for the optional tag is probably a good idea to use if I'm almost certain that I will be doing at least one more of these context (`ctx`) documents for this repo, today.
 
