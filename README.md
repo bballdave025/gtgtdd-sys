@@ -1,5 +1,5 @@
 # gtgtdd-sys
-Dave Life System reference and tools. “ultimately Good-enough Trying — getting there, despite Dave... System”. GTD based. Ne.ur0-∆i\/ friendly. 
+Dave Life System reference and tools. “ultimately Good-enough Trying — getting there, despite Dave... System”. GTD based. Ne.ur0-∆i\\/ friendly. 
 
 uGTgtdD Sys
 
