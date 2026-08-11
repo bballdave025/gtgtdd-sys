@@ -477,3 +477,66 @@ over an abstract taxonomy discussion.
   is interesting.
 - **Capture the branch. Stay on the trunk.**
 - **Lean-to, not cathedral.**
+
+---
+
+---
+
+---
+
+# Making sure all gathered things are here
+
+Yes. The things I was still holding onto as gathered/captured material, rather than considering them disposed of, were:
+
+GTD Workbook — actually work through it, doing the actions rather than producing comprehensive notes about it.
+
+Asana minimum viable implementation — figure out the smallest workable structure when actual use/workbook exercises require it.
+
+Old Google Keep GTD material — mine it for useful behaviors and structures, not necessarily its old syntax.
+
+Old contexts — determine which are still worth carrying forward, including object/device, place, people, organization, information/mode, and possibly idea.
+
+phelp — we don't remember what it meant; recover it only if that becomes worthwhile rather than doing archaeology merely to satisfy completeness.
+
+People-context material — especially things accumulated to ask/give/discuss/do with Anastasia, parents, etc.
+
+Time-required contexts — seconds, 5m, 15m, 30m, 45m, 60m, ~2h, and “this needs splitting”; exact buckets still negotiable.
+
+Energy-required contexts — the old “barely alive” through “up to eleven” idea; exact scale still negotiable.
+
+Priority — needs an operational meaning, rather than blindly restoring old Priority 1–4.
+
+Urgency — same; don't blindly restore Urgency 1–5.
+
+Importance vs. felt importance and urgency vs. felt urgency — specifically something to keep developing with Gerry and through actual use.
+
+Protection for important/non-urgent work — something the eventual system needs to accomplish.
+
+chip away little by little — preserve this useful category/concept for work that fits small scraps of time.
+
+Google Drive archaeology — example of chip-away work.
+
+Family-photo identification/annotation/history project — another chip-away candidate.
+
+Scanning incoming paper/mail — low-energy work and part of getting paper into the digital/reference system.
+
+_INBOX_SCANS processing — incoming scans/source material goes there; it isn't supposed to become permanent storage merely because something arrived there.
+
+General Reference organization — processed durable reference belongs under __General_Reference; exact permanent home for living uGTgtdD context/decision documents was still an open question.
+
+Minimal project-creation procedure — title → project list → description if needed → next action → provisional “done” → useful contexts → optional color/collaborators.
+
+NTEC/RMMFB home-tower context — some actions become available there because of the classifier, 14 TB drive, image collection/storage, etc.
+
+MLU recommender × LatentForge — explicitly captured as a branch, not uGTgtdD work: submit the MLU recommender today, preserve baseline MSE, then potentially do bounded controlled improvements and later use the matrix-factorization structure with LatentForge's synthetic book/reviewer data.
+
+The ~0.38 MSE idea — worth investigating as an experimental target, but not to be promoted into a magical career threshold or justification for endless optimization.
+
+Re-enrollment — possible if it buys a bounded learning/portfolio experiment; not simply to polish the leaderboard decimal.
+
+
+And there are a few things I was deliberately not holding as obligations: reproducing all the old Keep notation, recovering every historical category, making comprehensive GTD notes, making comprehensive Workbook notes, or deciding the complete Asana architecture before we actually need it.
+
+Most importantly, I think the Context Document you just committed is now the durable handoff for essentially this whole bundle. Its Active Questions explicitly preserves the Asana/context/time/energy/priority/phelp/Drive loose ends.
+
+So I don't need to keep a parallel secret armful of these things anymore. They've been gathered into the basket. That 075fcb6 commit is a rather satisfying point at which we can stop relying on conversational working memory for them.
