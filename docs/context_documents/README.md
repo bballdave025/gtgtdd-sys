@@ -1,98 +1,292 @@
 # Context Documents
 
-This directory contains **continuation-ready context documents** for the  
-*gtgtdd-sys* project.
+This directory contains **continuation-ready context documents** (Lab
+Notebook / LN files) for the **gtgtdd-sys** (uGTgtdD) project.
 
-These are not polished documentation. They are:
+> **Repository conventions**
+>
+> Project: `gtgtdd-sys` (the uGTgtdD system). Filename marker: `gtgtdd`.
+> Fill in the `{{...}}` placeholders in the templates for each continuation.
 
-- structured snapshots of design state
-- handoff-ready summaries for continuing work in a new session
-- “lab notebook” entries for architecture decisions and progress
+These are **not** polished documentation. They are:
 
----
+-   structured snapshots of project state,
+-   continuation-ready checkpoints,
+-   architecture and design records,
+-   "lab notebook" entries for architecture decisions and engineering progress.
 
-## Purpose
+------------------------------------------------------------------------
+
+# Purpose
 
 Each document is designed to answer:
 
-> “If I had to resume this work in a fresh environment, what would I need to know?”
+> **If I had to resume this work in a fresh environment, what would I
+> need to know?**
+
+The consistent header records the project name and description, machine- and
+human-readable timestamp, originating chat/session, and author attribution.
+This supports chronological tracking, reproducibility of thinking, and easy
+copy/paste into new AI sessions.
 
 They preserve:
 
-- current architecture
-- naming decisions
-- design constraints
-- next-step execution plans
-- important non-obvious insights
+-   current architecture
+-   terminology
+-   naming decisions
+-   design constraints
+-   implementation status
+-   next-step execution plans
+-   important non-obvious insights
+-   active questions
+
+Think of these as **checkpoint files for thinking**, not summaries.
+
+------------------------------------------------------------------------
+
+# Documentation Hierarchy
+
+1. README.md
+2. Project Charter
+3. Lab Notebook / Context Documents
+4. Experiment Notes
+
+Each layer answers a different question.
+
+------------------------------------------------------------------------
+
+# Context Document Header Template
+
+Use **double-brace placeholders** (`{{...}}`) rather than angle
+brackets.
+
+``` text
+*BEGIN: Context Document Header*
+
+# CONTEXT DOCUMENT — Continuation
+
+## Project
+
+**Name:**
+{{Short project name}}
+
+**Description:**
+{{1–3 sentences: what this project is and what it produces}}
 
 ---
 
-## Format
+## Continuation Metadata
 
-All context documents follow a consistent header:
+**Prepared at:**
+{{ssssssssss_YYYY-mm-ddTHH:MM:SS±ZZZZ}}
 
-- project name + description
-- timestamp (machine + human readable)
-- originating chat/session
-- author attribution
+Generated via:
 
-This allows:
+TZ=America/New_York date +'%s_%Y-%m-%dT%H:%M:%S%z'
 
-- chronological tracking
-- reproducibility of thinking
-- easy copy/paste into new AI sessions
+(Boston, MA time; keep the generated timestamp as plain text, not in a code block.)
 
-Specifically: 
+**Continued from chat:**
+{{Exact chat title}}
 
-```text
-CONTEXT DOCUMENT for continuation of the "[**INSERT-PROJECT-NAME-AND-1-TO-3-SENTENCE-DESCRIPTION**]" project
+**Also involving:**
 
-DOCUMENT PREPARED FOR CONTINUATION: 
-
-[**TIMESTAMP NOT IN CODE BLOCKS BUT CONTAINING THE INFO AS IF RETURNED FROM THE FOLLOWING BASH COMMAND**]
-
-date +'%s_%Y-%m-%dT%H:%M:%S%z'  # use current Boston, MA time zone
-
-CONTINUED FROM CHAT ENTITLED:
-[**INSERT-CHAT-TITLE**]
-ALSO INVOLVING
-`([**INSERT-OTHER-CHAT-SUBJECTS**]|no other subjects specified)`
-
-FROM USER 
-  (ChatGPT) usually-omit
-  (GitHub) @bballdave025
-```
+- {{Related topic}}
+- {{Related topic}}
+- *(or: no other subjects specified)*
 
 ---
 
-## Naming Convention
+## Author / Source
 
-```text
-LN_{short-project-marker}_YYYY-MM-DD_{very-optional-tag}_-_{short-slug}.md
+**User (GitHub):**
+@bballdave025
+
+**User (ChatGPT):**
+{{optional; usually omit}}
+
+---
+
+## Intent for This Context
+
+{{1–2 sentences describing what this continuation should enable}}
+
+---
+
+## Usage Instructions
+
+- Treat this document as **authoritative project state**.
+- Continue with **minimal re-derivation**.
+- Reinterpret only when explicitly requested.
+
+*ENDOF: Context Document Header*
 ```
 
-Example: the first one I'm doing (the one for the first trip where I set this up) here will be named 
+------------------------------------------------------------------------
 
-```text
+# Pre-Context-Document Prompt (PCDP)
+
+Before pasting a context document into a fresh chat, you may send a
+short PCDP to establish context and immediate goals.
+
+``` text
+## Current Work
+
+Project:
+{{Very short project description}}
+
+Starting with:
+
+- {{Step}}
+- {{Step}}
+- {{Step}}
+
+---
+
+## Upcoming Context Document
+
+The next message will be a CONTEXT DOCUMENT for:
+
+{{Full project name}}
+
+This continues discussion begun in:
+
+"{{Previous chat title}}"
+
+---
+
+## Timing
+
+Preparation:
+{{YYYY-MM-DDTHH:MM:SS±ZZ:ZZ}}
+
+(Optional) New chat:
+{{YYYY-MM-DDTHH:MM:SS±ZZ:ZZ}}
+
+---
+
+## Instructions for Next Message
+
+Instructions
+
+- Do not summarize.
+- Do not reformat.
+- Do not analyze.
+- Do not critique.
+- Do not extract bullet points.
+- Do not optimize language.
+- Treat the context document as authoritative state.
+- Your response should only:
+  1. Confirm receipt.
+  2. Confirm readiness to continue.
+
+---
+
+## Immediate Focus
+
+Help me:
+
+{{Concrete, task-oriented, ADHD-friendly next task}}
+
+*End of PCDP*
+```
+
+------------------------------------------------------------------------
+
+## Practical Note
+
+In normal use, the **Instructions for Next Message** section is often **omitted** _for the chat creating the context document_.
+
+Experience has shown that including it sometimes causes models to interpret the transferred context as operational instructions rather than as information to pass on. In most cases, the PCDP establishes the project, immediate focus, and previous chat. However, giving the directions to the _new_ chat (unlike giving it to the old) actually reduces confusion and extra explanations where Dave would prefer to continue cognitive momentum. After it's clear that the forthcoming Context Document is not a usual prompt, the Context Document can more easily supply the authoritative project state.
+
+Typical workflow:
+
+1. PCDP (optional)
+2. Context Document (authoritative)
+3. Continue work
+4. Update / create a new LN document before stopping
+
+------------------------------------------------------------------------
+
+# Naming Convention
+
+``` text
+LN_gtgtdd_YYYY-MM-DD_{{optional-tag}}_-_{{short-slug}}.md
+```
+
+Examples:
+
+``` text
 LN_gtgtdd_2025-05-16_ctx01_-_trajectories_career_resumes_etc.md
+LN_gtgtdd_2026-10-12_parked_-_career-application-review.md
 ```
 
-(`LN` is for Lab Notebook, my name for these files since undergrad, even when working in industry.)
+`LN` = Lab Notebook. This is Dave's longstanding name for these files, including from undergrad and industry work.
 
-(`gtgtdd` is for uGTgtdD system.)
+`gtgtdd` = uGTgtdD system. Keep this short project marker consistent.
 
-Something like `ctx01` for the optional tag is probably a good idea to use if I'm almost certain that I will be doing at least one more of these context (`ctx`) documents for this repo, today.
+The first example preserves the original README's filename example; the second
+illustrates a parked continuation.
 
-Other tags could be `submitted-addenda`, `pr-for-k-prisbrey`, or `parked`, but it's almost always better left blank.
+The optional tag is usually omitted unless it adds useful context. Examples of useful optional tags:
 
----
+- ctx01 (useful when more than one context document is expected for this repo that day)
+- parked
+- submitted-addenda
+- pr-for-k-prisbrey
 
-## Retrieval Tip
+When in doubt, omit the optional tag and its extra separator:
 
-If unsure where to resume:
+```text
+LN_gtgtdd_YYYY-MM-DD_-_{{short-slug}}.md
+```
 
-1. Sort by filename (date)
-2. Open the most recent `LN_*` file
-3. Follow its "Immediate Next Steps" or similar section
+Choose the slug to describe the primary project or engineering topic rather
+than the implementation detail.
 
----
+------------------------------------------------------------------------
+
+# What Belongs in a Context Document?
+
+A context document should capture the project's **current state**, including
+its engineering state where relevant, not merely what changed.
+
+Typical sections include:
+
+- Current architecture
+- Major modules and responsibilities
+- Recent implementation work
+- Current design rationale
+- Constraints and assumptions
+- Active questions
+- Immediate next steps
+
+When useful, include small code snippets, directory layouts, or command
+examples that reduce future re-derivation.
+
+------------------------------------------------------------------------
+
+# Scope
+
+These documents are intended to bridge work across:
+
+- multiple ChatGPT conversations,
+- multiple development sessions,
+- different machines,
+- and interruptions lasting days or months.
+
+They are written primarily for the future maintainer of the project,
+which is usually the author.
+
+------------------------------------------------------------------------
+
+# Retrieval Tip
+
+1.  Sort by filename.
+2.  Open the newest `LN_*`.
+3.  Resume from **Immediate Next Steps** (or equivalent).
+
+------------------------------------------------------------------------
+
+*End of README*
+
