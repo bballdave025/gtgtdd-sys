@@ -997,3 +997,452 @@ These are the most important system-conductor actions apparent at this snapshot.
 ## 7.1 Reconcile Sonari post-interview state
 
 This is the clearest canonical-state discrepancy.
+Current problem:
+
+- Asana still says interview scheduled and carries October 26 due/prep state.
+- Anastasia report still says interview scheduled and prep is next.
+- Newer explicit state says interview occurred and went well; hiring/consulting discussion is now waiting on employer-side follow-up.
+
+Recommended sequence:
+
+1. Obtain/use the richer post-interview capsule from Job Hunt and/or Interview Prep if available.
+2. Update the existing Sonari Asana task; do not create a duplicate.
+3. Clear the obsolete October 26 interview-prep due semantics.
+4. Record:
+   - interview completed;
+   - positive conversation without treating it as an offer;
+   - hiring timeline weeks-to-month+;
+   - consulting possibility discussed;
+   - Greg to discuss with partner, expected back around Oct. 29.
+5. Decide with Job Hunt what the next attention/review date should be; uGTgtdD should not invent employer-follow-up timing if the domain chat has a better semantic decision.
+6. Refresh the report so it no longer claims the interview is upcoming.
+
+## 7.2 Complete the October 27 snapshot first-draft collection
+
+Expected sibling files:
+
+- `LN_gtgtdd_2026-10-27T080000-0400_ugtgtdd_ctx01_-_system-conductor-handoff.md`
+- `LN_gtgtdd_2026-10-27T080000-0400_jobhunt_ctx01_-_job-search-conductor-handoff.md`
+- `LN_gtgtdd_2026-10-27T080000-0400_interviewprep_ctx01_-_interview-preparation-handoff.md`
+- `LN_gtgtdd_2026-10-27T080000-0400_upskillingcollabs_ctx01_-_fort-point-upskilling-collabs-handoff.md`
+- `LN_gtgtdd_2026-10-27T080000-0400_rmmfb_ctx01_-_rmmfb-ruthless-mvp-handoff.md`
+
+After first drafts:
+
+- compare them as a set;
+- propose edits/cross-links/section-number adjustments;
+- Dave makes final editorial decisions;
+- commit only when explicitly requested.
+
+## 7.3 Review stale FP↑ October 22 dates without automatically escalating everything
+
+The FP↑ launch/project tasks are incomplete and some October 22 dates are stale.
+
+Next useful conductor action is **review**, not automatic panic:
+
+- ask/derive what actually happened since Oct. 22;
+- mark completed work complete;
+- update active next actions;
+- clear or deliberately reschedule stale pseudo-dates;
+- leave secondary org-profile cleanup parked unless launch work is actually ready.
+
+## 7.4 Protect RMMFB movement
+
+RMMFB remains an important research/portfolio project.
+
+The conductor should:
+
+- keep the project visible;
+- avoid turning it into generic "research someday";
+- defer technical/scientific choices to the RMMFB chat;
+- activate dates only when Dave deliberately commits to the next run/submission push.
+
+## 7.5 Keep Vim/tmux parked until the scope guard is satisfied
+
+Do not activate merely because the task exists.
+
+Activation criterion:
+
+FP↑ current work reaches an appropriate stopping point.
+
+Then:
+
+1. schedule a bounded session/day;
+2. run `vimtutor`;
+3. restore/build the environment incrementally.
+
+## 7.6 Preserve Tommy as exploratory capture
+
+No immediate project expansion is required.
+
+When activated, first useful action is to talk with Graham and Parks resource people and obtain real job descriptions/organizational examples.
+
+## 7.7 Check the therapy reminder before October 28 appointment
+
+Asana still shows the reminder-email task incomplete.
+
+Do not claim the scheduled email exists unless verified.
+
+# 8. Cross-Chat Dependencies
+
+## 8.1 Job Hunt
+
+Expected sibling:
+
+[`LN_gtgtdd_2026-10-27T080000-0400_jobhunt_ctx01_-_job-search-conductor-handoff.md`](./LN_gtgtdd_2026-10-27T080000-0400_jobhunt_ctx01_-_job-search-conductor-handoff.md)
+
+Job Hunt owns:
+
+- candidate evaluation;
+- search prioritization;
+- application cost/mode;
+- application materials;
+- employer-specific semantics;
+- follow-up strategy;
+- fit/gap interpretation;
+- job-search next action.
+
+uGTgtdD owns:
+
+- canonical Asana reconciliation;
+- cross-project timing;
+- avoiding duplicate records;
+- preserving evidence/action state;
+- report refresh consequences.
+
+The system conductor should not become a second job-hunt chat.
+
+## 8.2 Interview Prep
+
+Expected sibling:
+
+[`LN_gtgtdd_2026-10-27T080000-0400_interviewprep_ctx01_-_interview-preparation-handoff.md`](./LN_gtgtdd_2026-10-27T080000-0400_interviewprep_ctx01_-_interview-preparation-handoff.md)
+
+Interview Prep owns:
+
+- bounded prep for a concrete interview;
+- company/job preparation;
+- story/example selection;
+- actual interview notes and reusable lessons.
+
+After an interview, it should send actionable consequences back to Job Hunt/uGTgtdD rather than maintaining an independent application state forever.
+
+## 8.3 FP↑ / Upskilling Collaborations
+
+Expected sibling:
+
+[`LN_gtgtdd_2026-10-27T080000-0400_upskillingcollabs_ctx01_-_fort-point-upskilling-collabs-handoff.md`](./LN_gtgtdd_2026-10-27T080000-0400_upskillingcollabs_ctx01_-_fort-point-upskilling-collabs-handoff.md)
+
+That context owns:
+
+- collaboration process;
+- participant/project pairings;
+- repo semantics;
+- questionnaire → bespoke-repo workflow;
+- permissions/onboarding details.
+
+uGTgtdD tracks the actionable consequences and timing.
+
+## 8.4 RMMFB
+
+Expected sibling:
+
+[`LN_gtgtdd_2026-10-27T080000-0400_rmmfb_ctx01_-_rmmfb-ruthless-mvp-handoff.md`](./LN_gtgtdd_2026-10-27T080000-0400_rmmfb_ctx01_-_rmmfb-ruthless-mvp-handoff.md)
+
+RMMFB owns:
+
+- scientific scope;
+- dataset/preprocessing/model decisions;
+- experiment design;
+- interpretation;
+- ruthless-MVP technical next step.
+
+uGTgtdD owns visibility, activation, scheduling, and cross-project priority.
+
+## 8.5 Later project-specific lab notebooks
+
+After the five major system/chat documents, Dave intends to visit active projects—mostly GitHub repositories—and create a project-level LN in each repo using the same snapshot timestamp but the project's own short-name marker.
+
+Conceptual example:
+
+`LN_ntec_2026-10-27T080000-0400_ctx01_-_current-project-state.md`
+
+Those project LNs should become the technical authority for the project at that snapshot.
+
+The `gtgtdd-sys` snapshot map will later link to them and provide a 5–10 sentence status summary after each link.
+
+# 9. Known Risks / Things Not to Re-derive
+
+## 9.1 Sonari visible state is stale
+
+Do not trust the current Asana/report display as the latest Sonari truth.
+
+Interview happened October 26 and was positive. No offer exists yet.
+
+## 9.2 Positive interview ≠ offer
+
+Dave believes he has a real shot. Preserve that as interpretation/assessment, not employment status.
+
+## 9.3 Amazon chat decline ≠ application rejection
+
+This distinction has already been researched, evidenced, and reconciled.
+
+Do not undo it during a later report regeneration.
+
+## 9.4 Work-email evidence limitations are already known
+
+Amazon work-email access is unavailable through the current personal connectors.
+
+Preserved evidence in Drive can outrank "not found in personal Gmail."
+
+Do not repeatedly infer "no notice" from personal-Gmail absence.
+
+## 9.5 Reports can be more current than Asana—or vice versa
+
+The intended architecture is one canonical state, multiple views, but actual handoffs sometimes update one before the other.
+
+Always reconcile rather than assuming precedence from recency alone.
+
+## 9.6 Report presentation metadata must survive refreshes
+
+Important presentation conventions:
+
+- Role best-link;
+- Evidence `JD ` durable fallback;
+- pink discussion status;
+- independent top-three rankings.
+
+A generated refresh that destroys these would be a regression even if raw job state were correct.
+
+## 9.7 Ranking sets are separate
+
+Anastasia's active-application top three and the leads-sheet top three are independent.
+
+Do not force overlap or propagate colors across sheets.
+
+## 9.8 Public job links rot
+
+That is why durable Drive JD fallback exists.
+
+Best-current link and durable-evidence link serve different purposes.
+
+## 9.9 Generic MITLL Software Engineer remains unresolved
+
+Do not attach it to a convenient requisition merely to eliminate ambiguity.
+
+The fallback status record exists specifically to preserve that uncertainty.
+
+## 9.10 Stale due dates are not automatically priorities
+
+FP↑ tasks still show Oct. 22 dates.
+
+Review what happened; do not convert stale dates into an emergency queue.
+
+## 9.11 General Capture is intentionally messy
+
+It is an inbox/capture layer.
+
+Do not reorganize 28 incomplete items merely because the count looks uncomfortable.
+
+Promote/clarify when action requires it.
+
+## 9.12 The tracker is not a wishlist
+
+For job search, only concrete opportunities enter the canonical project.
+
+For other domains, captured ideas can remain capture until deliberately activated.
+
+## 9.13 The snapshot timestamp is a family identifier
+
+`2026-10-27T080000-0400` does not imply every file was physically created at exactly 08:00.
+
+Do not "correct" sibling filenames to their individual wall-clock creation times.
+
+## 9.14 Do not rebuild settled conventions
+
+Examples already settled:
+
+- Asana canonical actionable state;
+- Drive durable evidence;
+- GitHub code/project truth;
+- domain semantic ownership;
+- capture-first General Capture;
+- duplicate working copies of reusable checklists;
+- `UNKNOWN` rather than invented precision;
+- lean-to, not cathedral.
+
+## 9.15 Do not let context-document work become a cathedral
+
+The purpose of the snapshot is faster resumption.
+
+If documentation perfection starts delaying the actual job hunt, research, collaboration, or Boston→Salt Lake transition work, stop and use the current draft.
+
+# 10. Handoff to the Next Chat
+
+A fresh uGTgtdD conductor should start like this:
+
+1. **Read this LN once, without rebuilding its decisions.**
+2. **Open the sibling context relevant to the next domain task.** Do not read every sibling before acting if only one domain matters.
+3. **Verify the two canonical Asana projects before writing state:**
+   - Job Search — Applications
+   - uGTgtdD — General Capture
+4. **Treat Sonari as the first known reconciliation gap.** The interview has happened; Asana/report still show pre-interview state.
+5. **Do not reopen the two Amazon informational-chat declines.** Their semantics are settled unless newer evidence arrives.
+6. **Ask whether this is a good time to uGTgtdD only when useful.** If Dave is already explicitly conducting the system, just conduct it.
+7. **Prefer one concrete next move over system improvement.**
+8. **Capture branches instead of losing them.**
+9. **Preserve evidence and exact IDs.**
+10. **Stop when the system is sufficient to support the work.**
+
+A good replacement-conductor response should often sound like:
+
+- "Captured."
+- "I found the existing task and updated it rather than creating a duplicate."
+- "That changes the next attention, not the application state."
+- "This is waiting; there is no useful action right now."
+- "I parked that branch and kept the trunk."
+- "The report is stale relative to Asana/domain state; I am reconciling it."
+
+It should rarely sound like:
+
+- "Let's redesign your whole workflow."
+- "I created six new projects because six topics were mentioned."
+- "No email appeared in personal Gmail, therefore the work-email notice did not happen."
+- "The interview went well, so you basically have the job."
+- "I don't know the short link, but I can probably guess it."
+
+# 11. Active / Waiting / Parked Registry
+
+**The subject, _Active / Waiting / Parked Registry_, would fit well immediately after §3, but it currently exists at §11.**
+
+This registry is intentionally compact.
+
+## ACTIVE
+
+### October 27 leaving-Boston snapshot
+
+Active documentation/orchestration work.
+
+Goal: produce enough linked state to resume quickly after transition, not a perfect archive.
+
+### Job search
+
+Active high-stakes external outcome.
+
+Important work includes canonical reconciliation, ongoing applications/leads, Sonari post-interview state, and preserving report usefulness.
+
+### FP↑ collaboration launch
+
+Still active enough to remain visible, but stale Oct. 22 dates require review.
+
+### RMMFB
+
+Protected research/portfolio priority. Technical next move belongs to its dedicated context.
+
+## WAITING / EXTERNAL
+
+### Sonari
+
+Waiting on employer-side hiring/consulting discussion after positive October 26 interview.
+
+### Submitted job applications
+
+Many are legitimately waiting for employer response. Waiting is a state, not a requirement to generate busywork.
+
+### Amazon Req. 10471620 / 10562848
+
+Applications remain waiting/open; informational-chat route itself is closed.
+
+## PARKED / DEFERRED
+
+### Vim + tmux environment rebuild
+
+Parked by explicit scope guard until FP↑ reaches an appropriate stopping point.
+
+### FP↑ secondary organization-profile cleanup
+
+Only after launch materials/process movement; not allowed to displace primary launch work.
+
+## CAPTURE / EXPLORATORY
+
+### Tommy school/university "glue-role" exploration
+
+Captured. Needs real conversations/job descriptions before stronger conclusions.
+
+# 12. October 27 Snapshot Collection Architecture
+
+**The subject, _October 27 Snapshot Collection Architecture_, would fit well between §8 and §9, but it currently exists at §12.**
+
+## 12.1 System/chat layer
+
+All major system/chat documents use the `gtgtdd` marker and live in:
+
+`gtgtdd-sys/docs/context_documents/`
+
+Expected first-pass files:
+
+```text
+LN_gtgtdd_2026-10-27T080000-0400_ugtgtdd_ctx01_-_system-conductor-handoff.md
+LN_gtgtdd_2026-10-27T080000-0400_jobhunt_ctx01_-_job-search-conductor-handoff.md
+LN_gtgtdd_2026-10-27T080000-0400_interviewprep_ctx01_-_interview-preparation-handoff.md
+LN_gtgtdd_2026-10-27T080000-0400_upskillingcollabs_ctx01_-_fort-point-upskilling-collabs-handoff.md
+LN_gtgtdd_2026-10-27T080000-0400_rmmfb_ctx01_-_rmmfb-ruthless-mvp-handoff.md
+```
+
+The exact originating chat names may be much longer; filenames use controlled subject tokens.
+
+## 12.2 Snapshot map
+
+Planned map:
+
+`LN_gtgtdd_2026-10-27T080000-0400_contextmap_ctx00_-_continuation-map.md`
+
+It should remain small enough to be a front door.
+
+Expected contents:
+
+- scope/purpose of snapshot;
+- system/chat LN links;
+- project-LN links;
+- active/waiting/parked labels;
+- 5–10 sentence status summary after each project link;
+- restart-from-here guidance;
+- explicit exclusions.
+
+Do not duplicate each LN into the map.
+
+## 12.3 Project layer
+
+Later active projects receive their own LN in their own repo.
+
+Filename concept:
+
+```text
+LN_{{short-name}}_2026-10-27T080000-0400_ctx01_-_{{short-slug}}.md
+```
+
+The project short-name replaces `gtgtdd` at this layer.
+
+The project LN should preserve repository/project technical state, while the snapshot map summarizes and links it.
+
+## 12.4 Scope exclusions
+
+This snapshot is **not** intended to include:
+
+- every dormant repo;
+- every historical idea;
+- an exhaustive file catalog;
+- routine life history;
+- a universal glossary;
+- a master dependency graph for its own sake;
+- documentation that can be regenerated trivially from Git/Asana.
+
+The admission test is approximately:
+
+> Will this help future Dave / a replacement chat resume an active or materially relevant thread without costly re-derivation?
+
+If not, it probably does not belong in the October 27 snapshot.
+
+---
+
+*End of context document*
