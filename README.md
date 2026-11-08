@@ -22,6 +22,7 @@ This repo is a home for:
 - `docs/system-one-pager.md`
 - `docs/naming-and-modes.md`
 - `docs/principles.md`
+- `docs/gather-capture-protocol.md` — cross-chat raw GTD gather → `_INBOX_SCANS` rule
 
 ## Repo Structure
 
