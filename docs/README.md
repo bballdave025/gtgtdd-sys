@@ -96,3 +96,9 @@ If unsure where to resume:
 3. Follow its "Immediate Next Steps" or similar section
 
 ---
+
+---
+
+## Operational protocols
+
+- [Job Hunt evidence and tracker reconciliation](./job-hunt-evidence-protocol.md) — check the month-specific Drive folder, distinguish postings/JD PDFs/receipts, reconcile Asana and both Sheets, then verify readback.
